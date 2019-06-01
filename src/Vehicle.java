@@ -33,7 +33,8 @@ public class Vehicle {
         this.fuelConsumption = fuelConsumption;
     }
      double range(){
-        return 0;
+        double x = fuelCapacity / fuelConsumption * 100;
+        return x;
 
     }
     public String getInfo(){

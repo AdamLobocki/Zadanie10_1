@@ -22,10 +22,12 @@ public class Truck extends Car {
     @Override
   public   double range() {
         double x;
-        if (getAirConditioner() == true) {
-            x =( getFuelCapacity() / (getFuelConsumption() + 1.6 + (weight / 100) * 0.5)) *100;
+        double xAC = 1.6;
+        double xW = 0.5;
+        if (getAirConditioner()) {
+            x =( getFuelCapacity() / (getFuelConsumption() + xAC + (weight / 100) * xW)) *100;
         } else
-            x = (getFuelCapacity() / (getFuelConsumption() + (weight / 100) * 0.5)) *100;
+            x = (getFuelCapacity() / (getFuelConsumption() + (weight / 100) * xW)) *100;
         return x;
     }
 }

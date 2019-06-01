@@ -24,8 +24,9 @@ public class Car extends Vehicle {
 @Override
    public double range() {
         double x;
-        if (airConditioner == true) {
-            x = (getFuelCapacity() / (getFuelConsumption() + 0.8) * 100);
+        double xAC = 0.8;
+        if (airConditioner) {
+            x = (getFuelCapacity() / (getFuelConsumption() + xAC) * 100);
         } else
             x = getFuelCapacity() / getFuelConsumption() * 100;
         return x;
