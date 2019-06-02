@@ -1,5 +1,6 @@
 public class Truck extends Car {
     private double weight;
+    double x;
 
     public double getWeight() {
         return weight;
@@ -21,7 +22,7 @@ public class Truck extends Car {
 
     @Override
   public   double range() {
-        double x;
+
         double xAC = 1.6;
         double xW = 0.5;
         if (getAirConditioner()) {

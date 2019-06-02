@@ -1,5 +1,5 @@
 public class Car extends Vehicle {
-
+    double x;
     private boolean airConditioner;
 
     public boolean getAirConditioner() {
@@ -23,7 +23,7 @@ public class Car extends Vehicle {
 
 @Override
    public double range() {
-        double x;
+
         double xAC = 0.8;
         if (airConditioner) {
             x = (getFuelCapacity() / (getFuelConsumption() + xAC) * 100);

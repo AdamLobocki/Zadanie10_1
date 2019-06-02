@@ -1,7 +1,7 @@
 public class Vehicle {
-   private String name;
-   private double fuelCapacity;
-   private double fuelConsumption;
+    private String name;
+    private double fuelCapacity;
+    private double fuelConsumption;
 
     public Vehicle(String name, double fuelCapacity, double fuelConsumption) {
         this.name = name;
@@ -32,12 +32,14 @@ public class Vehicle {
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
-     double range(){
+
+    double range() {
         double x = fuelCapacity / fuelConsumption * 100;
         return x;
 
     }
-    public String getInfo(){
+
+    public String getInfo() {
         return "";
     }
 }
